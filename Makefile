@@ -31,16 +31,16 @@ run test: #build # uncomment this to run build before testing
 
 gitlab:
 	@git push -u origin $(BRANCH)
-	@echo "✅ Pushed to Gitlab (origin)"
+	@echo "--- ✅ Pushed to Gitlab (origin) ---"
 
 github:
 	@git push -u github $(BRANCH)
-	@echo "✅ Pushed to Github (github)"
+	@echo "--- ✅ Pushed to Github (github) ---"
 
 push-all:
 	@make gitlab
 	@make github
-	@echo "🚀 Pushed to both GitLab and GitHub"
+	@echo "--- 🚀 Pushed to both GitLab and GitHub ---"
 
 # Phony targets: These are not actual files.
 .PHONY: all build clean run test gitlab github push-all
