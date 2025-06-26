@@ -249,6 +249,8 @@ usbutils
 vim
 virtualbox-guest-iso
 virtualbox-guest-utils
+vpnc
+wget
 wireless-regdb
 wireless_tools
 wireplumber
@@ -270,9 +272,15 @@ xf86-video-fbdev
 xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
+xfce4
+xfce4-goodies
 xfsprogs
 xl2tpd
 xorg
+xorg-xinput
+xterm
+xvidcore
+xz
 yad
 yay
 zathura
