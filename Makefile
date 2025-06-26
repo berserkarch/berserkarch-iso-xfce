@@ -29,13 +29,13 @@ run test: #build # uncomment this to run build before testing
 		# -drive if=pflash,format=raw,readonly=on,file=/usr/share/edk2/x64/OVMF_CODE.fd \
 		# -drive if=pflash,format=raw,file=/usr/share/edk2/x64/OVMF_VARS.fd
 
-github:
-	@git push -u origin $(BRANCH)
-	@echo "✅ Pushed to Github (github)"
-
 gitlab:
 	@git push -u origin $(BRANCH)
 	@echo "✅ Pushed to Gitlab (origin)"
+
+github:
+	@git push -u github $(BRANCH)
+	@echo "✅ Pushed to Github (github)"
 
 push-all:
 	@make gitlab
