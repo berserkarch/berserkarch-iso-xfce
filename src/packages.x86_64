@@ -1,0 +1,397 @@
+acpi
+adobe-source-code-pro-fonts
+alsa-utils
+amd-ucode
+# Apps
+arandr
+# archcraft-about
+# archcraft-artworks
+# archcraft-config-geany
+# archcraft-config-qt
+# archcraft-cursors
+# archcraft-fonts
+# archcraft-funscripts
+# archcraft/grub
+# archcraft-grub-theme
+# archcraft-hooks
+# archcraft-hooks-zsh
+# archcraft-icons
+# archcraft-mirrorlist
+# archcraft-neofetch
+# archcraft-omz
+# Archcraft Packages
+# archcraft/plymouth
+# archcraft-plymouth-theme
+# archcraft-ranger
+# archcraft-sddm-theme
+## Archcraft Specific ------------------------------
+# archcraft-themes
+# archcraft-vim
+# archcraft-wallpapers
+# archcraft-xfce
+archinstall
+arch-install-scripts
+## Archives
+## Arch Packages ------------------------------
+# atril
+## Audio
+## AUR Packages
+autoconf
+automake
+b43-fwcutter
+base
+base-devel
+bcachefs-tools
+bind
+bison
+blackarch-keyring
+blackarch-mirrorlist
+# blueman
+## Bluetooth
+# bluez
+# bluez-utils
+bolt
+boost
+## Bootloader ------------------------------
+brightnessctl
+brltty
+broadcom-wl
+btrfs-progs
+bzip2
+# calamares
+# calamares-config-xfce
+chaotic-keyring
+chaotic-mirrorlist
+## CLI Tools
+clonezilla
+cloud-init
+cryptsetup
+darkhttpd
+dbus
+ddrescue
+## Desktop ------------------------------
+# Desktop Environment
+dhclient
+dhcpcd
+diffutils
+## Display Manager ------------------------------
+dmidecode
+dmraid
+dnsmasq
+dosfstools
+downgrade
+dunst
+e2fsprogs
+edk2-shell
+efibootmgr
+## EOF ------------------------------
+#espeakup
+espeakup
+ethtool
+evince
+exfatprogs
+## extras
+f2fs-tools
+fakeroot
+fastfetch
+fatresize
+feh
+ffmpeg
+ffmpegthumbnailer
+## Files
+firefox
+flex
+## Fonts
+foot-terminfo
+fsarchiver
+## Functionality ------------------------------
+galculator
+gcc
+# geany
+# geany-plugins
+git
+gnome-keyring
+# gnome-terminal
+go
+gpart
+gparted
+gpm
+gptfdisk
+## GPU Drivers (Intel/AMD/VM) ------------------------------
+## GPU Drivers (Nvidia) ------------------------------
+# grml-zsh-config
+#grml-zsh-config
+#grub
+grub
+gst-libav
+gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-good
+gst-plugins-ugly
+gstreamer
+# gtk3-nocsd-git
+gvfs
+gvfs-afc
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+gzip
+hdparm
+highlight
+htop
+hyperv
+## Hypervisors ------------------------------
+## Images
+## Installer ------------------------------
+intel-ucode
+irssi
+iw
+iwd
+jasper
+jfsutils
+kcrash
+kitty
+kitty-terminfo
+kpmcore
+ksuperkey
+kvantum
+ldns
+less
+lftp
+libavif
+libde265
+libdv
+libfido2
+libheif
+libmpeg2
+libtheora
+libusb-compat
+libvpx
+libwebp
+lightdm
+lightdm-gtk-greeter
+linux
+linux-atm
+linux-firmware
+linux-firmware-marvell
+#livecd-sounds
+livecd-sounds
+lrzip
+lsb-release
+lsscsi
+lvm2
+lxappearance
+#lxappearance-obconf
+#ly
+lynx
+lz4
+lzip
+lzop
+make
+man-db
+man-pages
+mc
+mdadm
+meld
+memtest86+
+memtest86+-efi
+#menumaker
+mesa
+mesa-utils
+## Misc ------------------------------
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-firmware
+mkinitcpio-nfs-utils
+modemmanager
+mtools
+mugshot
+## Multimedia
+nano
+nbd
+ncdu
+ndisc6
+neofetch
+neovim
+# nerd-fonts
+nethogs
+## Networking
+networkmanager
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+network-manager-sstp
+networkmanager-strongswan
+networkmanager-vpnc
+nfs-utils
+nilfs-utils
+nmap
+nm-connection-editor
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ntfs-3g
+nvidia
+nvidia-settings
+nvidia-utils
+nvme-cli
+openconnect
+open-iscsi
+openpgp-card-tools
+openssh
+open-vm-tools
+openvpn
+os-prober
+p7zip
+## Package Tools
+partclone
+parted
+partimage
+patch
+pavucontrol
+pcmanfm
+pcsclite
+picom
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+pkgconf
+plasma-framework5
+plymouth
+polkit
+polybar
+powertop
+ppp
+pptpclient
+pulsemixer
+pv
+qemu-guest-agent
+qt5ct
+qt6ct
+## QT Style
+ranger
+refind
+reflector
+rofi
+rp-pppoe
+rsync
+rxvt-unicode-terminfo
+schroedinger
+screen
+#sddm
+sddm-git
+sdparm
+sequoia-sq
+sg3_utils
+simplescreenrecorder
+smartmontools
+sof-firmware
+spice-vdagent
+## Splash Screen ------------------------------
+squashfs-tools
+sublime-text-4
+sudo
+syslinux
+## System ------------------------------
+systemd-resolvconf
+tcpdump
+terminator
+terminus-font
+testdisk
+timeshift
+#tint2
+tmux
+## Touchpad and Mouse ------------------------------
+tpm2-tools
+tpm2-tss
+trash-cli
+tree
+ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
+tumbler
+udftools
+udisks2
+ueberzug
+unarchiver
+unrar
+unzip
+update-grub
+usb_modeswitch
+usbmuxd
+usbutils
+# Utilities
+## Video
+# Video Drivers
+vim
+virtualbox-guest-iso
+virtualbox-guest-utils
+# VMs
+vpnc
+wget
+wireless-regdb
+wireless_tools
+wireplumber
+wpa_supplicant
+wvdial
+x264
+x265
+xarchiver
+xclip
+xcolor
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdotool
+xf86-input-libinput
+xf86-input-vmmouse
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-fbdev
+xf86-video-intel
+xf86-video-nouveau
+xf86-video-vesa
+# xf86-video-vmware
+xfce4
+xfce4-goodies
+xfsprogs
+xl2tpd
+xorg
+
+## Xorg Server ------------------------------
+xorg-xinput
+xterm
+xvidcore
+xz
+yad
+yay
+zathura
+zip
+zsh
+zstd
+python-pip
+python-pipx
+
+# Extras
+maim
+flameshot
+ripgrep
+fd
+fzf
+flameshot
+viewnior
+obsidian
+exa
+
+## berserk
+berserk-calamares
+berserk-config-calamares
+# berserk-config-openbox
+berserk-config-xfce
+berserk-grub-theme
+berserk-hooks
+berserk-omz
+berserk-plymouth-theme
+berserk-sunity-cursor
+berserk-firefox-defaults
