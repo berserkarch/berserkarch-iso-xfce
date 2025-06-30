@@ -130,7 +130,11 @@ xdg-user-dirs-gtk-update
 mv /etc/berserk-environment /etc/environment
 
 ## refresh pacman mirrors
-# pacman -Syy --noconfirm
+pacman-key --init
+pacman-key --populate archlinux
+pacman-key --recv-keys B024DCEFADEF4328B5E3A848E7E0F2B78484DACF
+pacman-key --lsign-key B024DCEFADEF4328B5E3A848E7E0F2B78484DACF
+pacman -Syy --noconfirm
 
 ## -------------------------------------------------------------- ##
 
