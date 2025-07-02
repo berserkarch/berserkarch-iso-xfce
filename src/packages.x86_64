@@ -287,8 +287,6 @@ zathura
 zip
 zsh
 zstd
-python-pip
-python-pipx
 
 # Extras
 maim
@@ -300,6 +298,8 @@ flameshot
 viewnior
 obsidian
 exa
+python-pip
+python-pipx
 
 ## berserk
 berserk-keyring

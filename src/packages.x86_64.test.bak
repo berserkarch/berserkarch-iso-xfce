@@ -1,0 +1,394 @@
+#
+# /etc/archiso/packages.x86_64
+#
+# This file contains a list of packages to be installed on the Arch Linux ISO.
+# The packages are organized into logical groups for clarity and maintainability.
+# Every package from the original list has been preserved to prevent build failures.
+#
+
+# -- Core System & Command-line Utilities --
+# These are the fundamental packages required for a basic, functional Arch Linux system.
+base
+bzip2
+dbus
+gzip
+less
+lsb-release
+lz4
+lzip
+lzop
+man-db
+man-pages
+mkinitcpio
+polkit
+sudo
+xz
+zstd
+
+# -- Linux Kernel & Firmware --
+# The kernel itself, along with firmware needed for various hardware components.
+linux
+linux-firmware
+linux-firmware-marvell
+linux-atm
+sof-firmware
+amd-ucode
+intel-ucode
+b43-fwcutter      # Firmware extractor for certain Broadcom wireless cards
+broadcom-wl       # Broadcom wireless drivers
+
+# -- Bootloaders & Boot Utilities --
+# Tools for booting the system, including GRUB, Syslinux, and UEFI utilities.
+grub
+syslinux
+efibootmgr
+os-prober
+refind
+memtest86+        # BIOS memory tester
+memtest86+-efi    # UEFI memory tester
+plymouth          # Provides a graphical boot splash screen
+update-grub       # Wrapper script for grub-mkconfig
+
+# -- Archiso, Installation & Recovery Tools --
+# Packages essential for the ISO creation process and for system installation/recovery.
+archinstall
+arch-install-scripts
+clonezilla        # Partition and disk imaging/cloning program
+ddrescue          # Data recovery tool
+fsarchiver        # Filesystem archiver
+mkinitcpio-archiso
+mkinitcpio-firmware
+mkinitcpio-nfs-utils
+partclone
+parted
+partimage
+squashfs-tools    # Tools for creating and managing squashfs filesystems
+testdisk          # Powerful data recovery software
+
+# -- Filesystem & Disk Management --
+# A comprehensive set of tools for managing various filesystems, partitions, and storage volumes.
+bcachefs-tools
+btrfs-progs
+cryptsetup        # For managing encrypted volumes (LUKS)
+dmraid            # For FakeRAID
+dosfstools        # For FAT filesystems
+e2fsprogs         # For ext2/3/4 filesystems
+exfatprogs
+f2fs-tools
+fatresize
+gpart             # Guess PC-type hard disk partitions
+gparted           # GUI partition editor
+gptfdisk          # GPT fdisk utility
+jfsutils
+kpmcore           # KDE Partition Manager core library
+lvm2              # Logical Volume Manager
+mdadm             # For software RAID
+mtools            # For MS-DOS files
+nbd               # Network Block Device support
+nfs-utils
+nilfs-utils
+ntfs-3g           # NTFS driver for read/write access
+open-iscsi
+udftools
+xfsprogs
+
+# -- Networking & Connectivity --
+# Core networking stack, connection managers, VPN clients, and command-line network tools.
+bind              # DNS protocol tools
+darkhttpd         # Simple, fast HTTP server
+dhclient
+dhcpcd
+dnsmasq           # Lightweight DNS, DHCP and TFTP server
+ethtool
+iw                # Modern tool for wireless configuration
+iwd               # Wireless daemon for Linux
+ldns
+modemmanager
+nethogs           # A net top tool that groups bandwidth by process
+networkmanager
+network-manager-applet # GUI applet for NetworkManager
+nm-connection-editor   # GUI editor for NetworkManager connections
+ndisc6            # IPv6 diagnostic tools
+nmap              # Network scanner
+openssh
+ppp
+rp-pppoe
+systemd-resolvconf
+tcpdump
+wget
+wireless-regdb
+wireless_tools    # Classic command-line tools for wireless
+wpa_supplicant
+wvdial
+xl2tpd            # L2TP/IPsec VPN client
+
+# -- VPN & Tunneling Clients (for NetworkManager) --
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+network-manager-sstp
+networkmanager-strongswan
+networkmanager-vpnc
+openconnect
+openvpn
+pptpclient
+vpnc
+
+# -- X.Org Server, Graphics Drivers & Utilities --
+# The X server, video drivers for common hardware, and related utilities.
+mesa              # Open-source OpenGL implementation
+mesa-utils
+xorg
+xorg-xinput       # Utility to configure and test X input devices
+xterm             # Default terminal emulator for X
+# Generic and virtual drivers
+xf86-input-libinput
+xf86-input-vmmouse
+xf86-video-fbdev
+xf86-video-vesa
+# Hardware-specific drivers
+xf86-video-amdgpu
+xf86-video-ati
+xf86-video-intel
+xf86-video-nouveau
+# NVIDIA drivers
+nvidia
+nvidia-settings
+nvidia-utils
+
+# -- Desktop Environment (XFCE), Window Manager & Components --
+# The graphical user interface, including the desktop environment, display manager, compositor, and themes.
+# Core XFCE
+xfce4
+xfce4-goodies
+# Display Manager
+lightdm
+lightdm-gtk-greeter
+# Compositor, Bars, and Launchers
+picom             # Lightweight compositor (for transparency, shadows, etc.)
+polybar
+rofi
+# Theming and Appearance
+kvantum
+lxappearance
+qt5ct
+qt6ct
+# Core DE Utilities
+arandr            # GUI for xrandr (screen layout editor)
+dunst             # Notification daemon
+gnome-keyring     # Stores passwords and encryption keys
+gvfs              # Virtual filesystem for DEs (mounts, trash, etc.)
+gvfs-afc
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-smb
+kcrash            # KDE crash handler, likely a dependency
+ksuperkey
+mugshot           # User-profile editor for XFCE
+tumbler           # Thumbnail service for file managers
+xclip             # Command-line interface to X selections (clipboard)
+xcolor            # Color picker
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdotool           # Command-line X11 automation tool
+yad               # A tool for creating graphical dialogs from shell scripts
+# Plasma framework - likely pulled in as a dependency for a Qt application
+plasma-framework5
+
+# -- Terminal Emulators & Shells --
+# A collection of modern and classic terminal emulators and shells.
+foot-terminfo
+kitty
+kitty-terminfo
+rxvt-unicode-terminfo
+screen
+terminator
+tmux
+zsh
+ueberzug          # Image preview utility for terminals (used by ranger)
+
+# -- General Applications --
+# A curated list of GUI and command-line applications for various tasks.
+# File Managers
+mc                # Midnight Commander, a TUI file manager
+pcmanfm           # Lightweight GUI file manager
+ranger            # TUI file manager with vi key bindings
+xarchiver
+# Text Editors
+nano
+neovim
+sublime-text-4
+vim
+# Internet & Communication
+firefox
+irssi             # TUI IRC client
+lynx              # TUI web browser
+# Media & Document Viewers
+evince            # Document viewer (PDF, PostScript, etc.)
+feh               # Lightweight image viewer
+simplescreenrecorder
+viewnior          # Simple image viewer
+zathura           # Highly customizable document viewer
+# System & Utility Applications
+fastfetch         # System information tool
+flameshot         # Feature-rich screenshot tool
+galculator
+htop              # Interactive process viewer
+maim              # Simple screenshot utility
+meld              # Visual diff and merge tool
+neofetch          # System information tool
+timeshift         # System restore utility
+trash-cli
+tree              # Displays directory structure as a tree
+# Other
+obsidian
+
+# -- Audio & Multimedia (PipeWire) --
+# The PipeWire audio stack, codecs, and related applications.
+# Core Audio Stack
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+wireplumber       # Session manager for PipeWire
+# Utilities
+alsa-utils
+pavucontrol       # PulseAudio Volume Control (works with pipewire-pulse)
+pulsemixer        # TUI mixer for PulseAudio
+# GStreamer Framework & Plugins
+gstreamer
+gst-libav
+gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-good
+gst-plugins-ugly
+# Codecs & Libraries
+ffmpeg
+ffmpegthumbnailer # For video thumbnails in file managers
+jasper
+libavif
+libde265
+libdv
+libfido2
+libheif
+libmpeg2
+libtheora
+libusb-compat
+libvpx
+libwebp
+schroedinger
+x264
+x265
+xvidcore
+livecd-sounds     # Simple sound events for the live environment
+
+# -- Hardware Management & Utilities --
+# Tools for interacting with and managing hardware devices.
+acpi              # For battery, AC, and thermal info
+bolt              # Thunderbolt 3 device manager
+brightnessctl
+dmidecode         # DMI/SMBIOS table decoder
+hdparm
+lsscsi
+nvme-cli
+pcsclite          # PC/SC Smart Card library
+powertop          # Power consumption analysis tool
+sdparm
+sg3_utils
+smartmontools     # S.M.A.R.T. disk monitoring tools
+tpm2-tools
+tpm2-tss
+udisks2           # D-Bus service to access and manipulate storage devices
+usb_modeswitch
+usbmuxd           # For communication with Apple iOS devices
+usbutils
+
+# -- Accessibility --
+# Tools for users with disabilities.
+brltty            # Braille display driver
+espeakup          # Screen reader
+
+# -- Development Tools & Libraries --
+# Compilers, build tools, version control, and programming languages.
+autoconf
+automake
+base-devel        # Group containing essential development tools (gcc, make, etc.)
+bison
+boost             # C++ libraries
+diffutils
+fakeroot
+flex
+gcc
+git
+go
+highlight
+make
+patch
+pkgconf
+python-pip
+python-pipx
+# Search & CLI tools often used in development
+fd                # Simple, fast and user-friendly alternative to 'find'
+fzf               # Command-line fuzzy finder
+ripgrep           # Recursively searches directories for a regex pattern
+
+# -- Fonts --
+# A collection of fonts for the desktop and terminal.
+adobe-source-code-pro-fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+terminus-font
+ttf-firacode-nerd
+ttf-jetbrains-mono-nerd
+
+# -- Virtualization Guest Utilities --
+# Tools to improve integration when running the ISO in a virtual machine.
+cloud-init
+hyperv
+open-vm-tools
+qemu-guest-agent
+spice-vdagent
+virtualbox-guest-iso
+virtualbox-guest-utils
+
+# -- System Maintenance & AUR --
+# Tools for system maintenance, package management, and accessing the AUR.
+downgrade         # Script to downgrade packages
+reflector         # Arch mirrorlist manager
+rsync             # Fast, versatile, remote (and local) file-copying tool
+sequoia-sq        # PGP implementation
+yay               # AUR helper
+
+# -- Compression & Archive Utilities --
+p7zip
+unarchiver
+unrar
+unzip
+zip
+
+# -- Third-Party Repositories --
+# Keyrings and mirrorlists for non-official repositories.
+# Make sure these repositories are configured in /etc/pacman.conf on the ISO build.
+blackarch-keyring
+blackarch-mirrorlist
+chaotic-keyring
+chaotic-mirrorlist
+
+# -- Custom 'Berserk' Packages --
+# Custom packages specific to the Berserk OS configuration.
+berserk-keyring
+berserk-mirrorlist
+# Installer
+berserk-calamares
+berserk-config-calamares
+berserk-hooks
+# Theming & Configuration
+berserk-config-xfce
+berserk-firefox-defaults
+berserk-grub-theme
+berserk-omz
+berserk-plymouth-theme
+berserk-sunity-cursor
+berserk-tpm-tmux
